@@ -57,11 +57,11 @@ print (list_of_all)
 #create headers
 #loop using writefow function   
 with open ("salaryCap1.csv", "w") as csvFile:
-    csvWriter = writer(csvFile)
+    csv_writer = writer(csvFile)
     headers = ["Player","Position", "NFL Contract"]
-    csvWriter.writerow (headers)
+    csv_writer.writerow (headers)
     for  i in range(53):
-        csvWriter.writerow ([player_list[i],position_list[i],salary_list[i]])
+        csv_writer.writerow ([player_list[i],position_list[i],salary_list[i]])
         
 
 
