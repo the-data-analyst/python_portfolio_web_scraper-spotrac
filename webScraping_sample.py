@@ -9,20 +9,20 @@ response = requests.get ("https://www.spotrac.com/nfl/arizona-cardinals/cap/#").
 #pass contents of website using bs and convert to txt
 soup = BeautifulSoup(response,"html.parser")
 
-#use find all function to scrape positions in the table
+#use find all function to scrape positions in the spotrac table
 players = soup.find_all("td", class_ = "player")
 player_list = []
 for player in players[0:54]:
     player_list.append(player.a.text)
     
 
-#use find all function to scrape positions in the table
+#use find all function to scrape positions in the spotrac table
 positions = soup.find_all("td", class_ = "center small") 
 position_list = []
 for position in positions[0:54]:
     position_list.append(position.text)
    
-#use find all function to scrape salaries in the table
+#use find all function to scrape salaries in the spotrac table
 salaries = soup.find_all("td", class_ = "right xs-hide")
 
 
