@@ -53,6 +53,7 @@ print (list_of_all)
 
 
 #open csv file
+#justfor commit
 #write to csv file
 #create headers
 #loop using writefow function   
