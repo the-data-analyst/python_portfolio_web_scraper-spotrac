@@ -45,7 +45,7 @@ salary_list = []
 for s in sal_list[0:54]:
     salary_list.append(s)
    
-#create master list    
+#create master list of all player data    
 list_of_all = [player_list,position_list,salary_list]
 
 #test list by printing contents
@@ -59,7 +59,7 @@ print (list_of_all)
 #loop using writefow function   
 with open ("salaryCap1.csv", "w") as csvFile:
     csv_writer = writer(csvFile)
-    headers = ["Player","Position", "NFL Contract"]
+    headers = ["Player","Position", "Contract"]
     csv_writer.writerow (headers)
     for  i in range(53):
         csv_writer.writerow ([player_list[i],position_list[i],salary_list[i]])
