@@ -1,3 +1,5 @@
+#Initial scraping of data from spotrac
+
 import requests
 import csv
 
